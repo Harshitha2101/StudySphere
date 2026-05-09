@@ -34,7 +34,7 @@ StudySphere is a modern and responsive student dashboard designed to simplify ac
 - HTML5
 - CSS3
 - JavaScript
-- Google Material Icons
+
 
 ---
 

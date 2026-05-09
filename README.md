@@ -8,7 +8,7 @@ StudySphere is a modern and responsive student dashboard designed to simplify ac
 
 <br>
 
-![StudySphere](./images/StudySphere.png)
+![StudySphere Screenshot](./images/StudySphere.png)
 
 </div>
 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySphere</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" title="University Management System">
+            <div class="brand-logo">SS</div>
+            <h2>Study<span class="accent">Sphere</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                        <div class="avatar">GH</div>
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Harshitha</b> </p>
+                        <small class="text-muted">IIT ROPAR</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Mechanical Engineering</p>
+                    <h5>DOB</h5>
+                    <p>12-aug-2020</p>
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>unknown@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>a colony, b town, c state</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Attendance</h1>
+        <div class="subjects">
+            <div class="subject-card">
+                <span class="material-icons-sharp">architecture</span>
+                <h3>Engineering Graphics</h3>
+                <h2>12/14 Classes</h2>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 86%;"></div>
+                </div>
+                <p class="attendance-text">86% Attendance</p>
+            </div>
+
+
+            <div class="subject-card">
+                <span class="material-icons-sharp">functions</span>
+                <h3>Mathematics</h3>
+                <h2>27/29 Classes</h2>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 98%;"></div>
+                </div>
+                <p class="attendance-text">93% Attendance</p>
+            </div>
+
+
+            <div class="subject-card">
+                <span class="material-icons-sharp">computer</span>
+                <h3>Computer Architecture</h3>
+                <h2>27/30 Classes</h2>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 81%;"></div>
+                </div>
+                <p class="attendance-text">81% Attendance</p>
+            </div>
+
+
+            <div class="subject-card">
+                <span class="material-icons-sharp">dns</span>
+                <h3>Database Management</h3>
+                <h2>24/25 Classes</h2>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 96%;"></div>
+                </div>
+                <p class="attendance-text">96% Attendance</p>
+            </div>
+
+
+            <div class="subject-card">
+                <span class="material-icons-sharp">router</span>
+                <h3>Network Security</h3>
+                <h2>25/27 Classes</h2>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 92%;"></div>
+                </div>
+                <p class="attendance-text">92% Attendance</p>
+            </div>
+
+        </div>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay">&lt;</span>
+                    <h2>Today's Timetable</h2>
+                    <span id="nextDay">&gt;</span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()">X</span>
+                <div class="schedule-container" id="schedule-container"></div>
+
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="announcement-card">
+                        <div class="tag academic">
+                            Academic
+                        </div>
+                        <h4>
+                            Summer internship applications are now open.
+                        </h4>
+                        <small class="text-muted">
+                            2 Minutes Ago
+                        </small>
+
+                    </div>
+                    <div class="announcement-card">
+                        <div class="tag event">
+                            Event
+                        </div>
+                        <h4>
+                            Robotics Club recruitment starts tomorrow.
+                        </h4>
+                        <small class="text-muted">
+                            10 Minutes Ago
+                        </small>
+                    </div>
+                    <div class="announcement-card">
+                        <div class="tag exam">
+                            Exam
+                        </div>
+                        <h4>
+                            Mid-sem examination guidelines uploaded.
+                        </h4>
+                        <small class="text-muted">
+                            Yesterday
+                        </small>
+                     </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Teachers on leave</h2>
+                <div class="teacher">
+                    <div class="mini-avatar">Ck</div>
+                    <div class="info">
+                        <h3>Chander kumar</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="mini-avatar">SK</div>
+                    <div class="info">
+                        <h3>Samir kapoor</h3>
+                        <small class="text-muted">Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="mini-avatar">VK</div>
+                    <div class="info">
+                        <h3>Vandana Kota</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
